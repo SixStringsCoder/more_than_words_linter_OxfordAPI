@@ -1,0 +1,50 @@
+/* Text Area section */
+.textArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*border: 2px solid pink;*/
+}
+
+.textArea h3 {
+  display: flex;
+  font-family: 'Paytone One', sans-serif;
+  font-size: 1.3rem;
+  justify-content: center;
+  padding: .5rem 0;
+}
+
+.textBox {
+  display: flex;
+  font-size: .7rem;
+  padding: 1rem;
+  justify-content: center;
+  width: 90vw;
+  height: 30vw;
+  border: 1px solid black;
+}
+
+
+/*=========================
+      Media Queries
+===========================*/
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+
+  .textArea h3 {
+    font-size: 2rem;
+    padding-top: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .textBox {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+}

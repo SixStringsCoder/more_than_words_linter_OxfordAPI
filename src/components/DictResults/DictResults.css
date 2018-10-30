@@ -1,0 +1,50 @@
+.definitionBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 90vw;
+  margin: .7rem 0 2rem;
+  padding: .5rem;
+  border: 1px solid black;
+}
+
+.definitionBox p {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  margin-bottom: .3rem;
+}
+
+#term {
+  color: #382E13;
+  font-size: 1.3rem;
+}
+
+.classify {
+  font-weight: bold;
+  font-style: italic;
+  color: #1840a0;
+}
+
+#audioPlayer {
+  width: 11rem;
+  margin-top: .3rem;
+}
+
+/*=========================
+      Media Queries
+===========================*/
+@media only screen and (min-width: 768px) {
+
+  .definitionBox {
+      margin-bottom: 4rem;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+}

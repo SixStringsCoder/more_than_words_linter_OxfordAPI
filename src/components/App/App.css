@@ -1,0 +1,80 @@
+/* Universal Styles */
+html {
+  font-family: 'Slabo 27px', serif;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 1rem;
+  text-align: center;
+  width: 163px;
+  font-family: 'Paytone One', sans-serif;
+  font-weight: bold;
+  text-shadow: 2px 2px black;
+  color: #fff;
+  padding: 1rem;
+}
+
+/* LAYOUT */
+#app {
+  background: #fff url('./images/workspace.jpeg') center top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  /*border: 2px solid red;*/
+  margin: 0;
+  overflow: scroll;
+}
+
+/* Top Title */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  line-height: 150%;
+  background-color: rgba(39, 50, 70, .76);
+  /*border: 2px solid green;*/
+}
+
+h1 span {
+  font-size: .8rem;
+  font-style: italic;
+}
+
+.report {
+  display: flex;
+  flex-direction: column;
+}
+
+/*=========================
+      Media Queries
+===========================*/
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+  header {
+    padding: .6rem 0;
+    line-height: 300%;
+  }
+
+  h1 {
+    font-size: 3rem;
+    width: 490px;
+  }
+
+  h1 span {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+}

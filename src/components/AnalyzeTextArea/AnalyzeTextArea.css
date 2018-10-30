@@ -1,0 +1,36 @@
+/* Analyze-Text Area section */
+
+.analyzeTextArea {
+  display: flex;
+  justify-content: center;
+}
+
+.analyzeBox {
+  display: flex;
+  justify-content: center;
+  font-size: .7rem;
+  line-height: 150%;
+  padding: 1rem 1rem;
+  width: 90vw;
+  /* height: 20vh; */
+  border: 1px solid black;
+}
+
+/*=========================
+      Media Queries
+===========================*/
+@media only screen and (min-width: 768px) {
+  .analyzeBox {
+    font-size: 1.3rem;
+    line-height: 150%;
+    padding: 1rem 4rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+}

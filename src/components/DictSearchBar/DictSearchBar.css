@@ -1,0 +1,108 @@
+/* Oxford Dictionary Thesaurus section */
+.oxfordArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+  /*border: 2px solid blue;*/
+}
+
+.dictTitleAndBtn {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.oxfordArea h5 {
+  font-size: 1.2rem;
+  /*font-family: 'Spectral SC', serif;*/
+font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  padding: 1rem 0 .5rem;
+}
+
+.oxfordArea button {
+  font-size: 100%;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  padding: .8rem 1.4rem .6rem;
+  margin: .5rem .5rem;
+  border: 1px solid black;
+  background-color: #263048;
+  color: #f5f5f5;
+  outline: none;
+  transition: background-color .3s;
+}
+
+.oxfordArea button:hover {
+  background-color: #485A85;
+}
+
+.oxfordArea button:active {
+  color: #B0BAD1;
+}
+
+.wordInputGoBtn {
+  display: flex;
+  justify-content: center;
+  font-size: .7rem;
+  padding: .5rem .5rem;
+  margin: .5rem 0;
+  width: 52vw;
+  height: 1.5rem;
+  border: 1px solid black;
+}
+
+
+/*=========================
+      Media Queries
+===========================*/
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+
+  .textArea h3 {
+    font-size: 2rem;
+    padding-top: 1rem;
+  }
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+  header {
+    padding: .6rem 0;
+    line-height: 300%;
+  }
+
+  h1 {
+    font-size: 3rem;
+    width: 490px;
+  }
+
+  h1 span {
+    font-size: 1.8rem;
+  }
+
+  .textBox {
+    font-size: 1.4rem;
+  }
+
+  .analyzerArea button {
+    padding: .7rem 1.4rem .4rem;
+  }
+
+  .oxfordArea h5 {
+    font-size: 1.7rem;
+  }
+
+  .wordInputGoBtn {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
