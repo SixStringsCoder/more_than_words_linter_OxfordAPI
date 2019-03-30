@@ -11,7 +11,7 @@ export const DictResults = (props) => {
             <p><span id="term">{ id } ({ part })</span> { def }</p>
             <p><span className="classify">etymology</span>: { ety }</p>
             <p><span className="classify">pronunciation:</span> { pron }</p>
-            <div>
+            <div id="audio-player-cont">
               <audio className="my_audio" id="audioPlayer" controls controlsList="nodownload">
                   <source src={ listen } type="audio/mpeg" />
               </audio>

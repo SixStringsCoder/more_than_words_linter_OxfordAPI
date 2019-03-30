@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: flex-start;
   width: 90vw;
+  height: auto;
   margin: .7rem 0 2rem;
   padding: .5rem;
   border: 1px solid black;
@@ -25,8 +26,11 @@
   color: #1840a0;
 }
 
+audio {
+  filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+}
 #audioPlayer {
-  width: 11rem;
+  width: 18rem;
   margin-top: .3rem;
 }
 

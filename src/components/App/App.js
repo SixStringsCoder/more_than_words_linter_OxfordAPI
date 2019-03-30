@@ -4,13 +4,7 @@ import TextArea from '../TextArea/TextArea';
 import Analyze from '../Analyze/Analyze';
 import AnalyzeTextArea from '../AnalyzeTextArea/AnalyzeTextArea';
 import DictSearchBar from '../DictSearchBar/DictSearchBar';
-// import {DictResults} from '../DictResults/DictResults';
 import Oxford from '../../util/Oxford';
-
-// const styles = {
-//   color: 'red',
-//   textShadow: '1px 1px green',
-// };
 
 
 class App extends Component {
@@ -20,7 +14,6 @@ class App extends Component {
       wordDefDetails: [],
       wordThesDetails: [],
     };
-
 
   // Text pasted into <textarea> box
   addText = (text) => {
@@ -79,12 +72,6 @@ class App extends Component {
       }
 
     });
-
-    // // Filter out unnecessary words
-    // let betterWords = textAsArray.filter(function(word) {
-    //   	return !unnecessaryWords.includes(word);
-    // });
-
     this.setPrintState(stats);
   } // End of cleanAnalyze
 
@@ -114,7 +101,7 @@ class App extends Component {
 
     Oxford.searchThesaurus(word).then(results => {
       this.setState({
-        wordThesDetails: results
+        wordThesDetails: results ? results : []
       });
     });
   }
@@ -135,7 +122,6 @@ class App extends Component {
           wordDefDetails={ wordDefDetails }
           wordThesDetails={ wordThesDetails }
           />
-
       </main>
     );
   }

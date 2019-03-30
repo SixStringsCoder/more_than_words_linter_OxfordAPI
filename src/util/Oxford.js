@@ -14,6 +14,7 @@ const Oxford = {
           }
         }).then((response) => {
         if (response.status >= 400) {
+          return false;
           throw new Error("Bad response from server");
         }
         return response.json();
@@ -45,7 +46,12 @@ const Oxford = {
               app_key: appKey
             }
           }).then((response) => {
-          return response.json();
+            if (response.status >= 400) {
+              document.querySelector('#dict-results-area').innerHTML = '<h3>No results.</h3>';
+              return "Bad response from server";
+              throw new Error("Bad response from server");
+            }
+            return response.json();
           }).then(jsonResponse => {
             console.log(jsonResponse);
             if (jsonResponse.results) {

@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './TextArea.css';
 
@@ -19,7 +19,10 @@ class TextArea extends Component {
     return (
       <section className="textArea">
         <h3>Enter Text</h3>
-        <textarea onChange={this.handleChange} className="textBox" placeholder="Paste your text here..." autoFocus required>
+        <textarea onChange={this.handleChange}
+                  className="textBox"
+                  placeholder="Paste your text here..."
+                  autoFocus required>
           { text }
         </textarea>
       </section>

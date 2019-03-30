@@ -21,10 +21,9 @@ h1 {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: auto;
   /*border: 2px solid red;*/
   margin: 0;
-  overflow: scroll;
 }
 
 /* Top Title */
@@ -34,7 +33,7 @@ header {
   align-items: center;
   flex-wrap: wrap;
   line-height: 150%;
-  background-color: rgba(39, 50, 70, .76);
+  background-color: rgba(39, 50, 70, .9);
   /*border: 2px solid green;*/
 }
 

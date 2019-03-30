@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './DictSearchBar.css';
-import {DictResults} from '../DictResults/DictResults';
-import {ThesResults} from '../ThesResults/ThesResults';
+import { DictResults } from '../DictResults/DictResults';
+import { ThesResults } from '../ThesResults/ThesResults';
 
 
 class DictSearchBar extends Component {
@@ -32,7 +32,7 @@ class DictSearchBar extends Component {
           <input onChange={this.handleWordEntry} type="text" className="wordInputGoBtn" placeholder="Enter word"/>
           <button type="submit" onClick={this.handleSearch} id="defineBtn">Go</button>
         </div>
-        <div className="definitionBox">
+        <div className="definitionBox" id="dict-results-area">
         {
           wordDefDetails.map((detail, key) => {
             return <DictResults detail={detail} key={detail.id} />;
