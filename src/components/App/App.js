@@ -125,7 +125,7 @@ class App extends Component {
     return (
       <main id="app">
         <header className="navBar">
-          <h1>More Than Words &#9997; <span>The Online Linter</span></h1>
+          <h1>More Than Words &#9997; <br /><span>English Linter and Dictionary</span></h1>
         </header>
 
         <TextArea addText={this.addText} text={ textEntry } />

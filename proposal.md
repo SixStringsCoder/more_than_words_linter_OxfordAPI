@@ -1,7 +1,7 @@
 __Title__: More Than Words - The Online Linter
 By: Steve Hanlon Dec. 8, 2017
 
-__Goal__: Develop a React App based on the Mini-Linter project at Code Academy but also add Oxford Dictionary API to allow for Dictionary and Thesaurus results.
+__Goal__: Develop a React App based on the [Mini-Linter project at Code Academy](https://www.codecademy.com/programs/f151998eb027eb35e15b2081ee6ef9a0/items/fad8e5607a0fdd1b45123a6a3eec1813) but also add Oxford Dictionary API to allow for Dictionary and Thesaurus results.
 
 #### Work flow
 1. Develop index.html static site with hard-coded content.
@@ -38,9 +38,6 @@ __Goal__: Develop a React App based on the Mini-Linter project at Code Academy b
     - **Dictionary and Thesaurus** components - render buttons with onClick to call API
       - API utility component for AJAX call to Oxford API
 
-
-
 #### Future Feature Requests
 
-  - **Translate** component  - render button with onClick to call API
-    - API utility component for AJAX call to Google translate API
+  - **Translate** component  - render button with onClick to call Google API
